@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ownyourllm.com</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .x, .y {
+            width: 600px; /* Adjust width to fit the message */
+            height: auto; /* Adjust height based on content */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .x {
+            animation: x 13s linear infinite alternate;
+        }
+        .y {
+            animation: y 7s linear infinite alternate;
+        }
+        .message {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin: 20px 0;
+            font-weight: 700;
+        }
+        p {
+            color: #555;
+            font-size: 20px;
+            margin: 10px 0;
+            font-weight: 300;
+        }
+        @keyframes x {
+            0% {
+                transform: translateX(calc(-65vw));
+            }
+            100% {
+                transform: translateX(calc(0vw)); /* Adjust width to stay within window */
+            }
+        }
+        @keyframes y {
+            0% {
+                transform: translateY(calc(-45vh));
+            }
+            100% {
+                transform: translateY(calc(25vh)); /* Adjust height to stay within window */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y">
+            <div class="message">
+            <img src="./logo.png" alt="OYL Logo" />
+                <h1>Website is coming soon</h>
+                <p></p>
+                <p>...while you wait... Think about it!...</p>
+                <p></p>
+                <h1>You should own your LLMs</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
